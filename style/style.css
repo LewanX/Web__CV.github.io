@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+    body{
+        margin-left: 80px;
+
+    }
+
+    header{
+        width: 100%;
+        height: 10%;
+        background-color: rgb(224, 220, 220);
+       position: fixed;
+       /*transform: translateX(116px);*/
+       
+     
+      
+        
+    }
+    .icon-menu{
+       
+        width: 50px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform:translateX(10px);
+
+    }
+    .icon-menu i{
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute;
+    }
+    .menu__side {
+        width: 80px;
+        height: 100%;
+        background-color: rgb(0, 162, 255);
+        top : 0px;
+        left: 0;
+        color: white;
+        font-size: 18px;
+        position:fixed;
+        overflow: hidden;
+        overflow-y: scroll;
+        border-right: 20px solid rgb(0, 162, 255) ;
+        
+        
+    }
+/*ocularborde;chrome ,safari,opera*/
+    .menu__side::-webkit-scrollbar{
+        display: none;
+    }
+/*edge,mozilla*/
+    .menu__side{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        
+    }
+    .OPTIONS{
+        transform: translateY(70px);
+    }
+    .name-page{
+        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .name-page i{
+       
+        margin-right: 20px;
+    }
+    .code-page{
+        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .code-page i{
+        margin-right: 20px;
+    }
+    .option__menu{
+        padding: 20px 30px;
+        position: absolute;
+        top: 160px;
+    }
+    .option__menu a{
+        align-items: center;
+        color: #ffffffb2;
+        cursor: default;
+        position: relative;
+        transition:color 300ms;
+        display: flex;
+        margin-top: 50px;
+        transform:translateY(-30px);
+    }
+    .option__menu a:hover{
+        color: white;
+        
+    }
+    .option__menu i{
+        width: 20px;
+        cursor: pointer;
+    }
+    .option__menu a h4{
+        margin-left: 20px;
+        font-weight: 300;
+        
+        cursor: pointer;
+    }
+    a.selected{
+        color: white;
+    }
+
+    .selected:before{
+        content: '';
+        width: 3px;
+        height: 50px;
+        background-color: white;
+        position: absolute;
+        left: -30px;
+
+    }
+    
